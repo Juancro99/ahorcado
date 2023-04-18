@@ -1,0 +1,67 @@
+.logo{
+    margin: 20px 0 0 10px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    background: #F3F5FC;
+
+} 
+.nuevojuego {
+    margin: 0 0 0 100px;
+    font-size: 18px;
+    color: white;
+    background: darkblue;
+    padding: 18px;
+    border: none;
+    width: 25%;
+    border-radius: 24px;
+    transition: 0.4s all;
+}
+  
+.nuevojuego:hover {
+    background-color: rgb(7, 7, 59);
+    font-size: 23px;
+    padding: 16px 0;
+}
+  
+.nuevojuego:active {
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid;
+    padding: 10px;
+    border-color: darkblue;
+}
+  
+.nuevojuego:focus {
+    box-shadow: 0 0 0 2px darkblue;
+}
+  
+
+.rendirse{
+    margin: 0 0 0 50px;
+    font-size: 18px;
+    color: darkblue;
+    background: #D8DFE8;
+    padding: 18px;
+    border-color: darkblue;
+    width: 25%;
+    border-radius: 24px;
+    transition: 0.4s all;
+}
+
+.rendirse:hover {
+    background-color: #ffffff ;
+    font-size: 23px;
+    padding: 14px 0;
+}
+  
+.rendirse:active {
+    color: #D8DFE8;
+    background: darkblue;
+    padding: 10px;
+}
+  
+.rendirse:focus {
+    box-shadow: 0 0 0 2px #D8DFE8;
+}
