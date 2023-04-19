@@ -6,9 +6,18 @@ html, body {
     margin: 0;
     background: #F3F5FC;
 
+}
+#ahorcado {
+    margin: 0 0;
+    width: 0%;
 } 
-.nuevojuego {
-    margin: 0 0 0 100px;
+
+#palabra {
+    margin: 0 0 0 0;
+    width: 0%;
+}
+#nuevojuego {
+    margin: 35vh 75vh;
     font-size: 18px;
     color: white;
     background: darkblue;
@@ -19,13 +28,13 @@ html, body {
     transition: 0.4s all;
 }
   
-.nuevojuego:hover {
+#nuevojuego:hover {
     background-color: rgb(7, 7, 59);
     font-size: 23px;
     padding: 16px 0;
 }
   
-.nuevojuego:active {
+#nuevojuego:active {
     color: darkblue;
     background: #D8DFE8;
     border: 1px solid;
@@ -33,35 +42,13 @@ html, body {
     border-color: darkblue;
 }
   
-.nuevojuego:focus {
+#nuevojuego:focus {
     box-shadow: 0 0 0 2px darkblue;
 }
-  
 
-.rendirse{
-    margin: 0 0 0 50px;
-    font-size: 18px;
+footer div{
+    text-align: center;
+    margin: 20px 0 0 0;
     color: darkblue;
-    background: #D8DFE8;
-    padding: 18px;
-    border-color: darkblue;
-    width: 25%;
-    border-radius: 24px;
-    transition: 0.4s all;
-}
-
-.rendirse:hover {
-    background-color: #ffffff ;
-    font-size: 23px;
-    padding: 14px 0;
-}
-  
-.rendirse:active {
-    color: #D8DFE8;
-    background: darkblue;
-    padding: 10px;
-}
-  
-.rendirse:focus {
-    box-shadow: 0 0 0 2px #D8DFE8;
+    font-size: 15px;
 }
