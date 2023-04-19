@@ -3,7 +3,7 @@ function escogerPalabra(palabrasDisponibles) {
     // Obtiene un índice aleatorio a partir del arreglo de palabras disponibles
     let indiceAleatorio = Math.floor(Math.random() * palabrasDisponibles.length);
     // Asigna la palabra seleccionada al valor de la variable "palabrasecreta"
-    palabrasecreta = palabrasDisponibles[indiceAleatorio];
+    let palabrasecreta = palabrasDisponibles[indiceAleatorio];
     return(palabrasecreta)
 }
 
@@ -20,7 +20,7 @@ function dibujarGuiones(palabrasecreta){
     // Divide la palabra secreta en un arreglo de letras
     var letras = palabrasecreta.split("");
 
-    // Dibuja dos guiones por letra en el canvas
+    // Dibuja un guione y espacio en blanco por letra
     for(let i = 1; i <= 2*letras.length; i=i+2){
         let t = 30 *i;
         // Dibuja el guión oscuro
@@ -105,16 +105,6 @@ function dibujar(){
 
 }
 
-function ajustar(){
-    document.getElementById("nuevojuego").style.margin = "0 35%"; 
-    document.getElementById("ahorcado").style.margin = "0 16%";
-    document.getElementById("ahorcado").style.width = "600px";
-    document.getElementById("ahorcado").style.height = "370px";
-    document.getElementById("palabra").style.margin = "0 20%";
-    document.getElementById("palabra").style.width = "600px";
-    document.getElementById("palabra").style.height = "100px";
-    
-}
 // Funcion que borra el ahorcado y la palabra
 function borrar(){
     // Definimos la pantalla y pincel
@@ -156,7 +146,6 @@ function comprobar(event, check){
 }
 
 function newgame(){
-    ajustar();
     errores = 0;
     borrar();
     // Definimos un arreglo con las palabras disponibles 
