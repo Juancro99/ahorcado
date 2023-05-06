@@ -148,6 +148,7 @@ function endgame(state){
 }
 
 function newgame(){
+    document.getElementById("nuevojuego").textContent = "Nuevo Juego";
     // Iniciamos el juego
     jugando = true;
     errores = 0;
