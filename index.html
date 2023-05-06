@@ -13,17 +13,27 @@
         <img src="imagenes/logo.png" alt="logo" class="logo">
     </header>
     <main>
-        <div>
-            <div>
-                <canvas width="600" height="400" id="ahorcado"></canvas>
-                <canvas width="600" height="100" id="palabra"></canvas>
+        <div id="game">
+            <div class="container-ahorcado">
+                <div class="container-ahorcado-img">
+                    <img id="ahorcado">
+                </div>
+            </div>
+            <div class="container-palabra">
+                <canvas id="palabra" height="100"></canvas>
             </div>
             <div class="botones">
-                <input onclick="newgame()" type="submit" value="Nuevo juego" id="nuevojuego">  
+                <button onclick="newgame()" id="nuevojuego">Nuevo juego</button> 
             <!--  <input onclick="" type="button" value="Rendirse" class="rendirse">  -->  
             </div>
         </div>
-
+        <div class="endscreen" id="endscreen">
+            <div class="endgame">
+                <textarea id="endtext" cols="10" rows="5"></textarea>
+                <button onclick="restartgame()" id="jugardenuevo">Jugar de nuevo</button>
+            </div>
+        </div>
+        
     </main>
     <footer>
         <div>
