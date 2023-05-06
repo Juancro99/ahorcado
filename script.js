@@ -148,7 +148,7 @@ function endgame(state){
 }
 
 function newgame(){
-    document.getElementById("ca").style.height = "40vh"
+    document.getElementById("ca").style.height = "40vh";
     document.getElementById("nuevojuego").textContent = "Nuevo Juego";
     // Iniciamos el juego
     jugando = true;
