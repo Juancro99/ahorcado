@@ -1,21 +1,49 @@
-.logo{
-    margin: 20px 0 0 10px;
+
+html{
+    font-size: 16px;
 }
-html, body {
-    height: 100%;
+body {
     margin: 0;
-    background: #F3F5FC;
+    background: white;
 
 }
-#ahorcado {
-    margin: 0 14%;
-} 
+.logo{
+    margin: 10px;
+}
 
-#palabra {
-    margin: 0 0 0 20%;
+.container-ahorcado{
+    max-width: 100%;
+    max-height: 100%;
+    height: 40vh;
+    margin-bottom: 2%;
+}
+.container-ahorcado-img {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.container-ahorcado-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-palabra{
+    text-align: center;
+}
+
+#palabra{
+    width: 40%;
+    height: 10%;
+}
+.botones{
+    width: 100%;
+    text-align: center;
 }
 #nuevojuego {
-    margin: 0 0 0 100px;
     font-size: 18px;
     color: white;
     background: darkblue;
@@ -44,3 +72,73 @@ html, body {
     box-shadow: 0 0 0 2px darkblue;
 }
   
+.endgame{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    background-color: white;
+    width: 20%;
+    height: 30%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+#endscreen {
+    display:none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+#endtext{
+    position: absolute;
+    text-align: center;
+    width: 95%;
+    top: 10%;
+    left: 2%;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkblue;
+}
+#jugardenuevo {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    font-size: 15px;
+    color: white;
+    background: darkblue;
+    padding: 18px;
+    border: none;
+    width: 70%;
+    border-radius: 24px;
+    transition: 0.4s all;
+}
+  
+#jugardenuevo:hover {
+    background-color: rgb(7, 7, 59);
+    font-size: 23px;
+    padding: 16px 0;
+}
+  
+#jugardenuevo:active {
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid;
+    padding: 10px;
+    border-color: darkblue;
+}
+  
+#jugardenuevo:focus {
+    box-shadow: 0 0 0 2px darkblue;
+}
+
+footer div{
+    position: fixed;
+    left: 35%;
+    bottom: 0;
+    margin: 20 0 0 0;
+    color: darkblue;
+    font-size: 15px;
+}
